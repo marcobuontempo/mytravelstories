@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 </head>
-<body>
+<body style="background-color: rgb(250, 213, 183);">
     <header>
-        <img src="https://wikitravel.org/upload/shared//3/3d/Great_Sand_Dunes_National_Park_Banner.jpg" 
-        alt="Sand_Dunes"/>
+        <img src="/images/contactbanner.jpg" alt="Sand_Dunes" width=100%>
         <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./contact.html">Reach Me</a></li>
+            <ul type="none">
+                <li><a href="./index.html"><b>Home</b></a></li>
+                <li><a href="./contact.html"><b>Reach Me</b></a></li>
             </ul>
             
         </nav>
         <h1>Let's Connect</h1>
         <blockquote>
-            "If you need inspiration to do anything, then don't do it."
+            <em>"If you need inspiration to do anything, then don't do it."</em>
         </blockquote>
     </header>
     <main>
         <section>
             <form action="">
                 <fieldset>
-                 <legend>Your Detail's:</legend>
+                 <legend><b>Your Details:</b></legend>
                  <label for="fname">First name:</label>
-                 <input type="text" id="fname" name="fname"><br><br>
+                 <input type="text" id="fname" name="fname" placeholder="Your name..." required>
+                 <br><br>
                  <label for="lname">Last name:</label>
-                 <input type="text" id="lname" name="lname"><br><br>
-                 <label for="country">Country</label>          
-                    <select id="country" name="country" class="form-control">
+                 <input type="text" id="lname" name="lname" placeholder="Your last name..." required>
+                 <br><br>
+                 <label for="country">Country:</label>          
+                    <select id="country" name="country" required>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Åland Islands">Åland Islands</option>
                         <option value="Albania">Albania</option>
@@ -46,7 +47,7 @@
                         <option value="Argentina">Argentina</option>
                         <option value="Armenia">Armenia</option>
                         <option value="Aruba">Aruba</option>
-                        <option value="Australia">Australia</option>
+                        <option value="Australia" selected>Australia</option>
                         <option value="Austria">Austria</option>
                         <option value="Azerbaijan">Azerbaijan</option>
                         <option value="Bahamas">Bahamas</option>
@@ -282,22 +283,24 @@
                 <br>
                 <br>
                 How did you hear about me?
-                    <input type="radio" id="website" name="hear" value="website">
-                    <label for="website">Website</label>
+                    <input type="radio" id="website" name="hear" value="website" required>
+                    <label for="website"><em>Website</em></label>
                     <input type="radio" id="facebook" name="hear" value="facebook">
-                    <label for="facebook">Facebook</label>
+                    <label for="facebook"><em>Facebook</em></label>
                 <br>
                 <br>
-                Leave your Comment here:
+                Leave your comment here:
                 <br>
-                <textarea cols="50" rows="10" placeholder="write here..."></textarea>
+                <textarea cols="50" rows="10" placeholder="Write here..." required></textarea>
                 <br>
                 <br>
                 <input type="submit">  
             </form>
         </section>  
     </main>
-    <footer>Copyright 2021. All rights reserved. Made with <span style="color: rgb(172, 30, 30);padding: 1px;";>♡</span>
+    <br>
+    <footer>
+        <em>Copyright 2021. All rights reserved. Made with <span style="color: red;padding: 1px;";>♥</span></em>
     </footer>
 </body>
 </html>
